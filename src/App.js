@@ -7,11 +7,12 @@ import BulkSearch from './pages/BulkSearch';
 import Statistics from './pages/Statistics';
 import TopScores from './pages/TopScores';
 import Footer from './components/Footer';
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
+        <Analytics/>
         <Header />
         <main className="container mx-auto px-4 py-8">
           <Routes>

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Search, Users, BarChart3, Trophy, ArrowRight, CheckCircle } from 'lucide-react';
 import { apiService } from '../services/api';
 import LoadingSpinner from '../components/LoadingSpinner';
-
 const Home = () => {
   const [metadata, setMetadata] = useState(null);
   const [loading, setLoading] = useState(true);
