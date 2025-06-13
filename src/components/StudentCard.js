@@ -5,17 +5,16 @@ const StudentCard = ({ student, showDetails = true }) => {
   const getScoreColor = (score) => {
     const numScore = parseFloat(score);
     if (numScore >= 25) return 'text-green-600 bg-green-50';
-    if (numScore >= 20) return 'text-blue-600 bg-blue-50';
-    if (numScore >= 15) return 'text-yellow-600 bg-yellow-50';
+    if (numScore >= 17) return 'text-blue-600 bg-blue-50';
+    if (numScore >= 11) return 'text-yellow-600 bg-yellow-50';
     return 'text-red-600 bg-red-50';
   };
 
   const getGradeLevel = (score) => {
     const numScore = parseFloat(score);
-    if (numScore >= 25) return 'Xuất sắc';
-    if (numScore >= 20) return 'Giỏi';
-    if (numScore >= 15) return 'Khá';
-    if (numScore >= 10) return 'Trung bình';
+    if (numScore >= 25) return 'Giỏi';
+    if (numScore >= 17) return 'Khá';
+    if (numScore >= 11) return 'Trung bình';
     return 'Yếu';
   };
 

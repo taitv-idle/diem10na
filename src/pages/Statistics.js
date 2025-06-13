@@ -71,18 +71,18 @@ const Statistics = () => {
 
   const calculateDistribution = (students) => {
     const distribution = {
-      'Giỏi (20-30)': 0,
-      'Khá (15-19.9)': 0,
-      'Trung bình (10-14.9)': 0,
-      'Yếu (0-9.9)': 0,
+      'Giỏi (25-30)': 0,
+      'Khá (17-24)': 0,
+      'Trung bình (11-16)': 0,
+      'Yếu (<11)': 0,
     };
 
     students.forEach(student => {
       const score = student.tong_diem;
-      if (score >= 20) distribution['Giỏi (20-30)']++;
-      else if (score >= 15) distribution['Khá (15-19.9)']++;
-      else if (score >= 10) distribution['Trung bình (10-14.9)']++;
-      else distribution['Yếu (0-9.9)']++;
+      if (score >= 25) distribution['Giỏi (25-30)']++;
+      else if (score >= 17) distribution['Khá (17-24)']++;
+      else if (score >= 11) distribution['Trung bình (11-16)']++;
+      else distribution['Yếu (<11)']++;
     });
 
     return distribution;
@@ -202,7 +202,7 @@ const Statistics = () => {
                     type="text"
                     value={councilCode}
                     onChange={(e) => setCouncilCode(e.target.value)}
-                    placeholder="Nhập mã hội đồng (VD: HD001)"
+                    placeholder="Nhập mã hội đồng (VD: 18)"
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none"
                   />
                 </div>
