@@ -54,7 +54,7 @@ const StudentCard = ({ student, showDetails = true }) => {
               <p className="text-lg font-semibold text-gray-900">{student.diem_van || 'N/A'}</p>
             </div>
             <div className="text-center">
-              <p className="text-sm text-gray-500">Anh</p>
+              <p className="text-sm text-gray-500">Ngoại Ngữ</p>
               <p className="text-lg font-semibold text-gray-900">{student.diem_nn || 'N/A'}</p>
             </div>
             <div className="text-center">

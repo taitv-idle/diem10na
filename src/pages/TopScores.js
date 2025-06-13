@@ -153,7 +153,7 @@ const TopScores = () => {
                       <div className="font-semibold">{topStudents[1].diem_van || 'N/A'}</div>
                     </div>
                     <div>
-                      <span className="text-gray-500">Anh:</span>
+                      <span className="text-gray-500">Ngoại Ngữ:</span>
                       <div className="font-semibold">{topStudents[1].diem_nn || 'N/A'}</div>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ const TopScores = () => {
                         <div className="font-semibold text-yellow-700">{topStudents[0].diem_van || 'N/A'}</div>
                       </div>
                       <div>
-                        <span className="text-gray-500">Anh:</span>
+                        <span className="text-gray-500">Ngoại Ngữ:</span>
                         <div className="font-semibold text-yellow-700">{topStudents[0].diem_nn || 'N/A'}</div>
                       </div>
                     </div>
@@ -225,7 +225,7 @@ const TopScores = () => {
                       <div className="font-semibold">{topStudents[2].diem_van || 'N/A'}</div>
                     </div>
                     <div>
-                      <span className="text-gray-500">Anh:</span>
+                      <span className="text-gray-500">Ngoại Ngữ:</span>
                       <div className="font-semibold">{topStudents[2].diem_nn || 'N/A'}</div>
                     </div>
                   </div>
@@ -288,7 +288,7 @@ const TopScores = () => {
                         <div className="font-semibold">{student.diem_van || 'N/A'}</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-sm text-gray-500">Anh</div>
+                        <div className="text-sm text-gray-500">Ngoại Ngữ</div>
                         <div className="font-semibold">{student.diem_nn || 'N/A'}</div>
                       </div>
                       <div className="text-center">

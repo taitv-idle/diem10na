@@ -72,7 +72,7 @@ const BulkSearch = () => {
     if (!results || !results.found) return;
 
     const csvContent = [
-      ['SBD', 'Họ tên', 'Toán', 'Văn', 'Anh', 'Tổng điểm', 'Mã hội đồng'],
+      ['SBD', 'Họ tên', 'Toán', 'Văn', 'Ngoại Ngữ', 'Tổng điểm', 'Mã hội đồng'],
       ...results.found.map(student => [
         student.sbd,
         student.ho_ten || '',
