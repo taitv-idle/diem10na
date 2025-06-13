@@ -250,7 +250,7 @@ const Statistics = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-600 mb-2">
-                  {rangeResults.students ? rangeResults.students.length : rangeResults.count}
+                  {rangeResults.count || 0}
                 </div>
                 <div className="text-gray-600">Số thí sinh</div>
               </div>
@@ -303,7 +303,7 @@ const Statistics = () => {
           {rangeResults.students && rangeResults.students.length > 0 && (
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Danh sách thí sinh ({rangeResults.students ? rangeResults.students.length : rangeResults.count})
+                Danh sách thí sinh ({rangeResults.count || 0})
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {rangeResults.students.slice(0, 12).map((student, index) => (
@@ -334,34 +334,25 @@ const Statistics = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-600 mb-2">
-                  {councilResults.students ? councilResults.students.length : councilResults.total_students}
+                  {councilResults.total_students || 0}
                 </div>
                 <div className="text-gray-600">Tổng thí sinh</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-blue-600 mb-2">
-                  {councilResults.students && councilResults.students.length > 0 ? 
-                    (councilResults.students.reduce((sum, s) => sum + parseFloat(s.tong_diem), 0) / councilResults.students.length).toFixed(2) : 
-                    'N/A'
-                  }
+                  {councilResults.avg_score || 'N/A'}
                 </div>
                 <div className="text-gray-600">Điểm trung bình</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-green-600 mb-2">
-                  {councilResults.students && councilResults.students.length > 0 ? 
-                    Math.max(...councilResults.students.map(s => parseFloat(s.tong_diem))).toFixed(1) : 
-                    'N/A'
-                  }
+                  {councilResults.max_score || 'N/A'}
                 </div>
                 <div className="text-gray-600">Điểm cao nhất</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-red-600 mb-2">
-                  {councilResults.students && councilResults.students.length > 0 ? 
-                    Math.min(...councilResults.students.map(s => parseFloat(s.tong_diem))).toFixed(1) : 
-                    'N/A'
-                  }
+                  {councilResults.min_score || 'N/A'}
                 </div>
                 <div className="text-gray-600">Điểm thấp nhất</div>
               </div>
@@ -388,7 +379,7 @@ const Statistics = () => {
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
                 <Users className="mr-2 h-5 w-5" />
-                Thí sinh trong hội đồng ({councilResults.students ? councilResults.students.length : councilResults.total_students})
+                Thí sinh trong hội đồng ({councilResults.total_students || 0})
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {councilResults.students.slice(0, 12).map((student, index) => (
