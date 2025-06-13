@@ -11,6 +11,9 @@ const Footer = () => (
     <div>
       Hệ thống tra cứu điểm thi lớp 10 tỉnh Nghệ An
     </div>
+    <div>
+      Nếu có lỗi hoặc muốn bổ sung tính năng, hãy liên hệ qua <a href="https://www.facebook.com/dev.taidc" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">FB</a>
+    </div>
   </footer>
 );
 
