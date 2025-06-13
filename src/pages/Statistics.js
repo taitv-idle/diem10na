@@ -266,7 +266,7 @@ const Statistics = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-yellow-600 mb-2">
                   {rangeResults.students && rangeResults.students.length > 0 ? 
-                    Math.max(...rangeResults.students.map(s => parseFloat(s.tong_diem))).toFixed(1) : 
+                    Math.max(...rangeResults.students.map(s => parseFloat(s.tong_diem))):
                     'N/A'
                   }
                 </div>
@@ -275,7 +275,7 @@ const Statistics = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-red-600 mb-2">
                   {rangeResults.students && rangeResults.students.length > 0 ? 
-                    Math.min(...rangeResults.students.map(s => parseFloat(s.tong_diem))).toFixed(1) : 
+                    Math.min(...rangeResults.students.map(s => parseFloat(s.tong_diem))).toFixed(1) :
                     'N/A'
                   }
                 </div>
