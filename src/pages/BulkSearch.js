@@ -158,7 +158,7 @@ const BulkSearch = () => {
             </label>
             <textarea
               rows={4}
-              placeholder="0100001&#10;0100002&#10;0100003&#10;hoặc: 0100001, 0100002, 0100003"
+              placeholder="180144&#10;180145&#10;180146&#10;hoặc: 180147, 180148, 180149"
               onChange={(e) => handleTextareaChange(e.target.value)}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none"
             />

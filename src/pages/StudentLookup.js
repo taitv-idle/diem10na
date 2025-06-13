@@ -76,7 +76,7 @@ const StudentLookup = () => {
                 id="sbd"
                 value={sbd}
                 onChange={handleInputChange}
-                placeholder="Nhập số báo danh (VD: 0100001)"
+                placeholder="Nhập số báo danh (VD: 180144)"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
                 disabled={loading}
               />
@@ -110,7 +110,7 @@ const StudentLookup = () => {
           <h3 className="text-sm font-medium text-blue-900 mb-2">Hướng dẫn:</h3>
           <ul className="text-sm text-blue-700 space-y-1">
             <li>• Nhập chính xác số báo danh như trên giấy báo dự thi</li>
-            <li>• Số báo danh thường có 7 chữ số (VD: 0100001)</li>
+            <li>• Số báo danh có 6 chữ số (VD: 180144)</li>
             <li>• Không có khoảng trắng hoặc ký tự đặc biệt</li>
           </ul>
         </div>
