@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">Tra cứu điểm thi</h1>
-              <p className="text-sm text-gray-500">Lớp 10</p>
+              <p className="text-sm text-gray-500">Lớp 10 tỉnh Nghệ An</p>
             </div>
           </Link>
 

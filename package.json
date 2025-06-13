@@ -1,7 +1,7 @@
 {
   "name": "diem-thi-client",
   "version": "1.0.0",
-  "description": "Ứng dụng tra cứu điểm thi lớp 10",
+  "description": "Ứng dụng tra cứu điểm thi lớp 10 tỉnh Nghệ An",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

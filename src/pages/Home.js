@@ -77,8 +77,8 @@ const Home = () => {
       <section className="text-center py-12">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Tra cứu điểm thi
-            <span className="text-primary-600"> lớp 10</span>
+            Tra cứu điểm thi lớp 10 tỉnh
+            <span className="text-primary-600"> Nghệ An</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Hệ thống tra cứu điểm thi vào lớp 10 nhanh chóng, chính xác và tiện lợi. 

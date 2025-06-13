@@ -6,6 +6,7 @@ import StudentLookup from './pages/StudentLookup';
 import BulkSearch from './pages/BulkSearch';
 import Statistics from './pages/Statistics';
 import TopScores from './pages/TopScores';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/top-scores" element={<TopScores />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
